@@ -10,7 +10,7 @@ header('Content-Type: text/html; charset=UTF-8');
     <meta name="description" content="Implementación completa de intranet en solo 7 días por 97€. IA integrada, soporte 24/7 y garantía de lanzamiento." />
     
     <!-- CDNs Mejorados -->
-    <script src="assets/vendor/tailwindcss.js"></script>
+    <script src="/assets/vendor/tailwindcss.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -58,9 +58,9 @@ header('Content-Type: text/html; charset=UTF-8');
             }
         }
     </script>
-    <script src="assets/vendor/react.production.min.js"></script>
-    <script src="assets/vendor/react-dom.production.min.js"></script>
-    <script src="assets/vendor/babel.min.js"></script>
+    <script src="/assets/vendor/react.production.min.js"></script>
+    <script src="/assets/vendor/react-dom.production.min.js"></script>
+    <script src="/assets/vendor/babel.min.js"></script>
     
     <!-- Fonts Premium -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2083,16 +2083,6 @@ header('Content-Type: text/html; charset=UTF-8');
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
 
 
 
