@@ -1,0 +1,15 @@
+# Habilitar el motor de reescritura
+RewriteEngine On
+
+# Rutas del módulo de billing (resuelve /billing/*, /admin/billing/* y /tenant/billing/*)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(billing|admin/billing|tenant/billing)(/.*)?$ billing_module/routes/web.php [L,QSA]
+
+# Configurar página de error 404 personalizada
+ErrorDocument 404 /iuconnect/404.php
+
+# Opcional: Si quieres forzar que las URLs sin extensión también pasen por el sistema
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ 404.php [L]
