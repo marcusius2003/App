@@ -1,4 +1,6 @@
 <?php
+$BASE = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+if ($BASE === '/') $BASE = '';
 header('Content-Type: text/html; charset=UTF-8');
 ?>
 <!DOCTYPE html>
@@ -2083,7 +2085,6 @@ header('Content-Type: text/html; charset=UTF-8');
     </script>
 </body>
 </html>
-
 
 
 
